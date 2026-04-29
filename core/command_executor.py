@@ -14,6 +14,7 @@ from typing import Dict, Any
 from datetime import datetime
 from core.visual import ModernVisualEngine
 from core.telemetry import TelemetryCollector
+from core.process_manager import ProcessManager
 
 logger = logging.getLogger(__name__)
 

@@ -1,13 +1,17 @@
 {
   "mcpServers": {
     "hexstrike-ai": {
-      "command": "/path/to/hexstrike-official/hexstrike-env/bin/python3",
+      "command": "/usr/local/bin/docker",
       "args": [
-        "/path/to/hexstrike-official/hexstrike_mcp.py",
+        "exec",
+        "-i",
+        "hexstrike-ai-server",
+        "python3",
+        "/app/hexstrike_mcp.py",
         "--server",
-        "http://localhost:8888"
+        "http://127.0.0.1:8888"
       ],
-      "description": "HexStrike AI v6.1 - Advanced Cybersecurity Automation Platform",
+      "description": "HexStrike AI v6.1 Docker-hosted stdio MCP bridge",
       "timeout": 300,
       "disabled": false
     }
